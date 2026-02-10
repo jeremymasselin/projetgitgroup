@@ -8,7 +8,7 @@ h1{
     color: white;
     font-family: 'poppins', sans-serif;
     font-weight: 800;
-    font-size: 4em;
+    font-size: 5em;
     margin: 0;
 }
 
@@ -32,6 +32,25 @@ p{
     font-family: 'poppins', sans-serif;
     font-weight: 200;
     margin: 0;
+}
+
+/* -------- HEADER -------- */
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
 }
 
 /* -------- HEROSECTION -------- */
@@ -99,6 +118,9 @@ p{
 
 .TextCartePortfolio{
     padding: 10px;
+    h3{
+        margin: 10px 0px;
+    }
 }
 
 /* -------- SECTION NOS SERVICES -------- */
@@ -154,6 +176,11 @@ p{
     font-size: 2em;
 }
 
+
+
+
+
+
 /* -------- RESPONSIVE TABLETTE -------- */
 
 /* ------ HEROSECTION ------ */
@@ -206,6 +233,11 @@ p{
     }
 
 }
+
+
+
+
+
 
 /* -------- RESPONSIVE MOBILE --------------- */
 

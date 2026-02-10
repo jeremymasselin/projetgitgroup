@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
+}
+
+/* HERO BACKGROUND */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("photo.git/pexels-divinetechygirl-1181263.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content{
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 900px;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .btn-primary{
+    background-color: rgb(72, 99, 234);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .hero .btn-primary{
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+.footer img:hover{
+    color: rgb(72, 99, 234);
+    transition: 0.3s;
+}
+
+.footer p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+

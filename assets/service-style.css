@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
+}
+
+.title {
+  text-align: center;
+  background-color: #0055a4;
+  color: white;
+  padding: 5px;
+}
+.offre {
+  margin: 25px;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: #0055a4;
+  color: white;
+  .prix {
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 25px;
+    a {
+      text-decoration: none;
+      color: #0055a4;
+    }
+    a:hover{
+        color: yellow;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .bandeau {
+    display: flex;
+    .offre {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .tx {
+        font-size: 150%;
+      }
+    }
+  }
+}

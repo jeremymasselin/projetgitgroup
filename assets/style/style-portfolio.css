@@ -1,0 +1,152 @@
+/* -------- ALL -------- */
+
+body{
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    margin: 0;
+}
+
+h2{
+    color: black;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+h3{
+    color: black;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4;
+    margin: 0;
+}
+
+p{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+/* -------- HEROSECTION -------- */
+
+
+.HeroSection{
+    background-color: #0055a4;
+}
+
+.HeroSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 60px 100px;
+    gap: 30px;
+}
+
+/* -------- SECTION PORTFOLIO -------- */
+
+.SectionPortfolio{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.SectionPortfolioTitle{
+    padding: 50px;
+}
+
+.PortfolioProjet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 0px 80px;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.CartePortfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0055a4;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.CartePortfolio:hover{
+    width:100%;
+    -webkit-transform:scale(1.3);transform:scale(1.3);-webkit-transition:1s ease-in-out;transition:0.5s ease-in-out}
+
+.ImageCartePortfolio{
+    img{
+        width: 100%;
+    }
+}
+
+
+.TextCartePortfolio{
+    padding: 10px;
+}
+
+/* -------- RESPONSIVE TABLETTE -------- */
+
+/* ------ HEROSECTION ------ */
+
+@media (max-width: 1024px) {
+
+    /* ------ HEROSECTION ------ */
+    .HeroSectionTitle {
+        padding: 40px 50px;
+        p{
+            font-size: 0.8em;
+        }
+        h1{
+            font-size: 2.8em;
+        }
+    }
+
+    /* ---- SECTION PORTFOLIO ---- */
+
+
+    .PortfolioProjet{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 40px;
+    }
+
+}
+
+/* -------- RESPONSIVE MOBILE --------------- */
+
+
+@media (max-width: 650px) {
+
+
+    /* ------ SECTION PORTFOLIO ------ */
+
+    .SectionPortfolioTitle{
+        h2{
+            font-size: 1.6em;
+        }
+    }    
+
+    .PortfolioProjet{
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+    }
+}
+
+
+

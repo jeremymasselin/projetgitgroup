@@ -126,7 +126,7 @@ p{
     padding: 20px 20px 20px 50px;
     gap: 20px;
     p{
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding-right: 30px;
         line-height: 1.7em;
     }
@@ -138,7 +138,7 @@ p{
 
 .DivGeneralNosService button{
     background-color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: 'poppins', sans-serif;
     border: none;
     border-radius: 7px;
@@ -179,6 +179,32 @@ p{
         padding: 0px 40px;
     }
 
+    /* ---- SECTION NOS SERVICES ---- */
+
+    .DivGeneralNosService{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin: 30px;
+    }
+
+    .Texteetphoto{
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+        gap: 30px;
+    }
+
+    .Texteetphoto p{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .DivGeneralNosService button{
+        padding: 10px 40px;
+        font-size: larger;
+        margin: 20px 5px;
+    }
+
 }
 
 /* -------- RESPONSIVE MOBILE --------------- */
@@ -199,6 +225,38 @@ p{
         grid-template-columns: 1fr;
         padding: 0px 20px;
     }
+
+    /* ---- SECTION NOS SERVICES ---- */
+
+    .DivGeneralNosService{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin: 30px;
+    }
+
+    .Texteetphoto{
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+        gap: 30px;
+    }
+
+    .Texteetphoto p{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .DivGeneralNosService button{
+        padding: 10px 40px;
+        font-size: larger;
+        margin: 20px 5px;
+    }
+
+
+
+
+
+    
 }
 
 

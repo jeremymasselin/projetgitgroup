@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
+}

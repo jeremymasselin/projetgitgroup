@@ -1,0 +1,300 @@
+/* -------- ALL -------- */
+
+body{
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    font-size: 5em;
+    margin: 0;
+}
+
+h2{
+    color: black;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+h3{
+    color: black;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+p{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+/* -------- HEADER -------- */
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
+}
+
+/* -------- HEROSECTION -------- */
+
+
+.HeroSection{
+    background-color: #0055a4;
+}
+
+.HeroSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 60px 100px;
+    gap: 30px;
+}
+
+/* -------- SECTION PORTFOLIO -------- */
+
+.SectionPortfolio{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.SectionPortfolioTitle{
+    padding: 50px;
+}
+
+.PortfolioProjet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 0px 80px;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.CartePortfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0055a4;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.CartePortfolio:hover{
+    width:100%;
+    -webkit-transform:scale(1.3);transform:scale(1.3);-webkit-transition:1s ease-in-out;transition:0.5s ease-in-out}
+
+.ImageCartePortfolio{
+    img{
+        width: 100%;
+    }
+}
+
+
+.TextCartePortfolio{
+    height: 100%;
+    padding: 10px;
+    h3{
+        margin: 10px 0px;
+    }
+}
+
+/* -------- SECTION NOS SERVICES -------- */
+
+.SectionNosServicesTitle{
+    text-align: center;
+    padding-top: 40px;
+    h2{
+        font-size: 3em;
+    }
+}
+
+.DivGeneralNosService{
+    background-color: #0055a4;
+    margin: 70px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Texteetphoto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px 20px 20px 50px;
+    gap: 20px;
+    p{
+        font-size: 1.2em;
+        padding-right: 30px;
+        line-height: 1.7em;
+    }
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.DivGeneralNosService button{
+    background-color: white;
+    font-size: 1.5em;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    border-radius: 7px;
+    margin: 40px;
+    padding: 20px 60px;
+    cursor: pointer;  
+}
+
+.DivGeneralNosService button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid white;
+    font-size: 2em;
+}
+
+
+
+
+
+
+/* -------- RESPONSIVE TABLETTE -------- */
+
+/* ------ HEROSECTION ------ */
+
+@media (max-width: 1024px) {
+
+    /* ------ HEROSECTION ------ */
+    .HeroSectionTitle {
+        padding: 40px 50px;
+        p{
+            font-size: 0.8em;
+        }
+        h1{
+            font-size: 2.8em;
+        }
+    }
+
+    /* ---- SECTION PORTFOLIO ---- */
+
+
+    .PortfolioProjet{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 40px;
+    }
+
+    /* ---- SECTION NOS SERVICES ---- */
+
+    .DivGeneralNosService{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin: 30px;
+    }
+
+    .SectionNosServicesTitle{
+        font-size: 0.7em;
+    }
+
+    .Texteetphoto{
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+        gap: 30px;
+    }
+
+    .Texteetphoto p{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .DivGeneralNosService button{
+        padding: 10px 40px;
+        font-size: larger;
+        margin: 20px 5px;
+    }
+
+}
+
+
+
+
+
+
+/* -------- RESPONSIVE MOBILE --------------- */
+
+
+@media (max-width: 650px) {
+
+
+    /* ------ SECTION PORTFOLIO ------ */
+
+    .SectionPortfolioTitle{
+        h2{
+            font-size: 1.6em;
+        }
+    }    
+
+    .PortfolioProjet{
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+    }
+
+    /* ---- SECTION NOS SERVICES ---- */
+
+    .DivGeneralNosService{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin: 30px;
+    }
+
+    .Texteetphoto{
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+        gap: 30px;
+    }
+
+    .Texteetphoto p{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .DivGeneralNosService button{
+        padding: 10px 40px;
+        font-size: 0.8em;
+        margin: 20px 5px;
+    }
+
+
+
+
+
+    
+}
+
+
+

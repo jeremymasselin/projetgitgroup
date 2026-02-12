@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "mapolice";
+    src: url(/fonts/mapolice.ttf) format("OpenType");
+    font-weight:normal;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.nav-link{
+    color: rgb(13, 13, 13);
+    font-weight: 500;
+}
+
+.lihov .nav-link{
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lihov .nav-link:hover{
+    background-color: rgb(106, 131, 255);
+    color: white;
+}
+.conteneur-text{
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: "mapolice",sans-serif;
+    background: url("images/img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter:blur(5px);
+
+
+}
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+    
+}
+
+.contact-box video {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+section {
+     border: 2px solid rgba(255, 255, 255, 0.7);
+     background-color: rgb(255,255,255,0.2);
+     backdrop-filter:blur(0px);
+
+    padding: 30px;
+    border-radius: 20px;
+    margin: 80px;
+    height:50vh;
+    
+}
+
+section h2 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.modal-body input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.modal-body .form-control {
+    
+    border: 2px solid rgba(255, 255, 255, 0.7);
+     background-color: rgb(255,255,255,0.2);
+     backdrop-filter:blur(0px);
+     color: grey ;
+
+}
+
+
+.modal-content {
+      border: 2px solid rgba(255, 255, 255, 0.7);
+     background-color: rgba(255, 255, 255, 0.5);
+     backdrop-filter:blur(10px);
+
+    color:white ;
+}
+
+
+#videoModal .form-control::placeholder {
+  color:grey;
+  opacity: 1;
+}
+
+p {
+  color: white;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>Page Contact</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+
+<header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #b8c1fcfd">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo-search-grid-2x.png"
+              alt="Logo"
+              width="80"
+              height="60"
+              style="border-radius: 15px"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            style="background-color: #92b3e7fb";"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto gap-4 mb-2 mb-lg-0 rounded"
+              style="background-color: #92b3e7fb"
+            >
+              <li class="nav-item lihov">
+                <a class="nav-link" href="index.html">ACCUEIL</a>
+              </li>
+
+              <li class="nav-item lihov">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+
+              <li class="nav-item lihov">
+                <a class="nav-link" href="#">PORTFOLIO</a>
+              </li>
+
+              <li class="nav-item lihov">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+ <div class="conteneur-text">
+<br>
+<h1>Donnons vie à votre projet</h1>
+ <br>
+
+    Vous avez une idée, un besoin ou un projet web ? <br>
+    Notre équipe vous accompagne dans la création de solutions modernes 
+    et adapté a vos objectifs. 
+    <br> <br>
+    Choisissez la méthode qui vous convient le mieux pour nous l'expliquer. 
+</p>
+</div>
+
+<div class="contact-options">
+
+<section class="contact-box">
+<h2>Soumettre une demande</h2>
+<br>
+<p>
+    Remplissez le formulaire et expliquez-nous votre besoin. 
+    Nous vous répondrons rapidement.
+</p>
+<br>
+
+ <button class="btn btn-primary"
+         data-bs-toggle="modal"
+        data-bs-target="#contactModal">
+    Formulaire de contact
+  </button> 
+</section>
+
+<section class="contact-box video">
+<h2>Expliquez votre projet en vidéo</h2>
+<br>
+<p>
+Vous préférez expliquer votre idée à l'oral ? 
+Envoyez-nous une courte vidéo de la présentation.
+</p>
+<br>
+<button 
+    class="btn btn-secondary"
+    data-bs-toggle="modal"
+    data-bs-target="#videoModal">
+    Envoyer une vidéo
+  </button>
+</section>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Soumettre une demande</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+     <form>
+ <label class="form-label">Nom</label>
+<input type="text" class="form-control" id="name" placeholder="Votre nom">
+<br>
+
+<label class="form-label">Adresse mail</label>
+<input type="email" class="form-control" Placeholder="Votre adresse mail">
+<br>
+
+<label class="form-label">Votre projet</label>
+ <textarea id="message" rows="2" class="form-control" placeholder="Ex: site vitrine, application web..."></textarea>
+  <br>
+
+ <button class="btn btn-primary" type="submit">
+  Envoyer
+</button>
+</form>
+</div>
+   </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Envoyer une vidéo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="p">
+          Envoyez-nous une courte vidéo pour nous présenter votre projet.
+          Cela nous aidera à mieux comprendre votre besoin.
+        </p> 
+      </div>
+                <form>
+          
+            <label class="form-label">Nom</label>
+            <input type="text" class="form-control" required>
+        
+
+         
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+         
+
+          
+            <label class="form-label">Fichier vidéo</label>
+            <input type="file" class="form-control" accept="video/*">
+         
+
+          
+            <label class="form-label">Ou lien vers la vidéo</label>
+            <input type="url" class="form-control" placeholder="https://">
+         <br>
+
+          <button type="submit" class="btn btn-secondary w-100">
+            Envoyer la vidéo
+          </button>
+        </form>
+     </div>
+   </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

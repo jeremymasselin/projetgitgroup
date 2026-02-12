@@ -19,3 +19,23 @@ body{
     background-color: rgb(106, 131, 255);
     color: white;
 }
+
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.contact-box video {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+section {
+    background-color: green;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 80px;
+}
